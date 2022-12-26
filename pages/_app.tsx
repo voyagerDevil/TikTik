@@ -1,8 +1,8 @@
 import type { AppProps } from "next/app";
 import { useState, useEffect } from "react";
-import Sidebar from "../components/Sidebar";
-import Navbar from "../components/Navbar";
-import "../styles/globals.css";
+import Sidebar from "@components/Sidebar";
+import Navbar from "@components/Navbar";
+import "@styles/globals.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isSSR, setIsSSR] = useState<boolean>(true);
