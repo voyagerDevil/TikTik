@@ -3,9 +3,10 @@ import axios from "axios";
 import { IVideo } from "@types";
 import VideoCard from "@components/VideoCard";
 import NoResults from "@components/NoResults";
+import { BASE_URL } from "@utils/index";
 
 export const getServerSideProps = async () => {
-  const { data } = await axios.get(`http://localhost:3000/api/post`);
+  const { data } = await axios.get(`${BASE_URL}/api/post`);
 
   return {
     props: {
