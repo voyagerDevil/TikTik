@@ -41,7 +41,7 @@ const Comments = ({
                   user._id === (item.postedBy._id || item.postedBy._ref) && (
                     <div
                       className="p-2 items-center"
-                      key={`comment-${idx}-${user._id}`}
+                      key={`comment-${idx}-${user._id}-1-2`}
                     >
                       <Link href={`/profile/${user._id}`}>
                         <div className="flex items-start gap-3">

@@ -16,7 +16,7 @@ export default async function handler(
           .commit()
       : await client
           .patch(postId)
-          .unset([`likes[_ref==${userId}]`])
+          .unset([`likes[_ref=="${userId}"]`])
           .commit();
 
     res.status(200).json(data);
