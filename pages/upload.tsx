@@ -10,7 +10,7 @@ import { client } from "@utils/client";
 import { topics } from "@utils/constants";
 import { BASE_URL } from "@utils/index";
 
-const upload = () => {
+const Upload = () => {
   const { userProfile }: { userProfile: any } = useAuthStore();
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
@@ -175,4 +175,4 @@ const upload = () => {
   );
 };
 
-export default upload;
+export default Upload;
